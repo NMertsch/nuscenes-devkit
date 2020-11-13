@@ -2,16 +2,16 @@ import os
 
 import setuptools
 
-with open('../README.md', 'r') as fh:
+with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 # Since nuScenes 2.0 the requirements are stored in separate files.
-with open('requirements.txt') as f:
+with open('setup/requirements.txt') as f:
     req_paths = f.read().splitlines()
 requirements = []
 for req_path in req_paths:
     req_path = req_path.replace('-r ', '')
-    with open(req_path) as f:
+    with open("setup/" + req_path) as f:
         requirements += f.read().splitlines()
 
 
@@ -28,7 +28,6 @@ def get_dirlist(_rootdir):
 
 
 # Get subfolders recursively
-os.chdir('..')
 rootdir = 'python-sdk'
 packages = [d.replace('/', '.').replace('{}.'.format(rootdir), '') for d in get_dirlist(rootdir)]
 

@@ -1,3 +1,7 @@
+Fork of [nutonomy/nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit) without the dependencies `torch` and `torchvision`.
+
+Install via `pip install git+https://github.com/nmertsch/nuscenes-devkit`.
+
 # nuScenes devkit
 Welcome to the devkit of the [nuScenes](https://www.nuscenes.org/nuscenes) and [nuImages](https://www.nuscenes.org/nuimages) datasets.
 ![](https://www.nuscenes.org/public/images/road.jpg)
