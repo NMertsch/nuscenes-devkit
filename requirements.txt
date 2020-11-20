@@ -3,7 +3,7 @@ descartes
 fire
 jupyter
 matplotlib
-numpy
+numpy==1.19.3
 opencv-python
 Pillow
 pyquaternion>=0.9.5
