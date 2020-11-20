@@ -1,5 +1,13 @@
-Fork of [nutonomy/nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit) without the dependencies `torch` and `torchvision`.
+# Fork of [nutonomy/nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
+## Aim:
+Easier setup for working with the Python SDK on the NuScenes dataset.
 
+## Changes:
+- Cleaned and moved `setup.py` to top-level enable installation via `pip install git+[github url]`
+- Removed `nuscenes.nuimages` because its `pycocotools` dependency is not Windows-compatible
+- Removed dependencies `torch` and `torchvision` because they are large (hundreds of MB), slow down the installation significantly and I don't need them
+
+## Installation
 Install via `pip install git+https://github.com/nmertsch/nuscenes-devkit`.
 
 # nuScenes devkit
