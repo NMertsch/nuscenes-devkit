@@ -1,3 +1,0 @@
--r requirements/requirements_base.txt
--r requirements/requirements_tracking.txt
--r requirements/requirements_nuimages.txt
